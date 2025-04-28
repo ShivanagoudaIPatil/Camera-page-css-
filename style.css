@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* main box */
+.main_box{
+    height: 100vh;
+    background: url("photo.jpg");
+    background-size: cover;
+} 
+
+  /* btn_one */
+.btn_one i{
+    color: white;
+    font-size:30px;
+    position: absolute;
+    left: 16px;
+    /* top: 2px; */
+    font-weight: 700;
+    line-height: 60px;
+    cursor: pointer;
+    transition:all 0.3s linear;
+}
+
+/* sidebar_menu */
+.sidebar_menu{
+    position: absolute;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition:all 0.3s linear;
+}
+
+/* logo */
+.sidebar_menu .logo {
+    position: absolute;
+    /* left: 200px; */
+    width: 100%;
+    height: 60px;
+    box-shadow:  0 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* achor tag of logo */
+.sidebar_menu .logo a{
+    color: white;
+    font-family: 28px;
+    font-weight: 500;
+    text-decoration: none;
+    position: absolute;
+    left: 50px;
+}
+
+/* btn_two */
+.sidebar_menu .btn_two i{
+    width: 100px;
+    font-size: 25px;
+    position: absolute;
+    left: 275px;
+    cursor: pointer;
+    transition:all 0.3s linear;
+}
+
+/* menu */
+.sidebar_menu .menu{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+}
+
+/* list */
+.sidebar_menu .menu li{
+    margin-top:8px;
+    padding: 14px 20px;
+    color: white;
+}
+
+/* achor tag of list */
+.sidebar_menu .menu li,a{
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+/* menu icons */
+.sidebar_menu .menu i{
+    padding-right: 8px;
+    opacity: 0.8;
+}
+
+/* socila_media */
+.sidebar_menu .social_media{
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+}
+
+/* social media icons */
+.sidebar_menu .social_media i{
+    padding: 0 5px;
+    color: white;
+    opacity: 0.5;
+}
+
+ /* check box */
+#check{
+    display: none;
+}
+
+/* hover effects  */
+.btn_one i:hover{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.btn_two i:hover{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.sidebar_menu .menu i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.sidebar_menu .social_media i:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* condition os checked box */
+#check:checked ~ .sidebar_menu{
+    left:0;
+}
+#check:checked~ .btn_one{
+    opacity: 0;
+}
